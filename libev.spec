@@ -1,11 +1,12 @@
 Name:             libev
-Version:          4.33
+Version:          4.33+git1
 Release:          1
 Summary:          High-performance event loop/event model with lots of features
 
 License:          BSD or GPLv2+
 URL:              http://software.schmorp.de/pkg/libev.html
 Source0:          %{name}-%{version}.tar.gz
+Source1:          README.md
 
 BuildRequires:    autoconf
 BuildRequires:    automake
