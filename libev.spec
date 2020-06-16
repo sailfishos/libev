@@ -1,11 +1,13 @@
+%global package_version 4.33
+
 Name:             libev
-Version:          4.33+git1
+Version:          %{package_version}+git1
 Release:          1
 Summary:          High-performance event loop/event model with lots of features
 
 License:          BSD or GPLv2+
 URL:              http://software.schmorp.de/pkg/libev.html
-Source0:          %{name}-%{version}.tar.gz
+Source0:          %{name}-%{package_version}.tar.gz
 Source1:          README.md
 
 BuildRequires:    autoconf
@@ -50,7 +52,7 @@ BuildArch:        noarch
 This package contains the documentation for %{name}.
 
 %prep
-%autosetup -p0
+%autosetup -p0 -n %{name}-%{package_version}
 autoreconf -vfi
 
 %build
